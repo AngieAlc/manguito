@@ -1,8 +1,48 @@
 <html>
     <head>
-        <title> Manguito lamepijas </title>   
-    </head>
-    <body>
-        <button> Quieres ver? </button>
+        <title> Titulo </title>
+        <!-- responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS  -->
+        <link rel="stylesheet" href="css/index.css"> 
+    </head> 
+    <body class="all-center">
+        <div class="container" id="intro-el"> 
+            <div class="justMeFont"> 
+                Happy Happy Happy
+            </div>
+            <div> 
+                <img id="giftOvalo" src="/img/cat-cat-jumping.gif"> 
+            </div>  
+            <div class="justMeFont">
+                Cuarto mes &#10084;
+            </div>
+            <button id="quieres-ver"> Quieres ver tu regalo??? </button>
+        </div>
+
+        <div class="pop-up-container all-center" id="pop-up-el"> 
+            <div class="pop-up-contra"> 
+                <h1> Ingresa la contraseña: </h1>
+                <p> 
+                    Hola amooor. Te preguntarás por qué esto tiene contraseña. Yyyy es por que..., ya sabrás. 
+                    La manera en que funciona este primer reto es parecido al juego "frio y caliente".
+                    Aunque seré más buena, y en vez de decirte "tibio" o "hirviendo", te daré pistas cada vez que ingreses
+                    algo que creas que pueda ser la posible contraseña. Anda probando palabras que se te vengan a la mente como posibles contraseñas. 
+                    Puedes pedirme ayuda, perso solo si es necesario. 
+                    Buena suerte :) 
+                </p>
+                <input id="posible-contra" type="password" placeholder="Siii, escribe acá uwu"> 
+                <br> 
+    
+                <div class="buttons-abajo"> 
+                    <button id="cerrar"> Cerrar </button>
+                    <button id="verificar-contra"> Verificar </button>
+                </div>
+            </div>
+        </div>
+    
+        <script src="js/questions.js"></script> 
+        <script src="js/index.js"></script> 
     </body>
 </html>

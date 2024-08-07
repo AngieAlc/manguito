@@ -1,3 +1,153 @@
-/* TOpo */
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Me+Again+Down+Here&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxanium:wght@200..800&family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* Angie <3 */
+body{
+    background-color: #F9ECCC;
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex; 
+}
+h1{
+    font-family: "Oxanium", sans-serif;
+}
+p{
+    font-family: "Nunito Sans", sans-serif;
+}
+.justMeFont{
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 70px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+.pressStartFont{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#giftOvalo{
+    border-radius: 250%;
+    margin: 0 auto; 
+    width: 220px;
+    height: 200px;
+}
+input, button{
+    color: white; 
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+    background-color: #4C0827; 
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 10px; 
+    min-width: 150px; 
+}
+div input{
+    color: black; 
+    background-color: white; 
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    display: block;
+    margin: 25px auto;
+    min-width: 300px; 
+}
+button:hover{
+    opacity: 80%; 
+    transition: opacity 0.3s ease-out;
+    cursor: pointer;
+}
+.container{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.opciones{
+    display: flex; 
+    flex-direction: column;
+    gap: 5px; 
+}
+.claves{
+    background-color: rgb(184, 141, 60, 0.3); 
+    border-radius: 4px;
+    border: 2px solid rgb(184, 141, 60); 
+    padding: 4px 10px;
+    text-align: left; 
+    width: 30%;
+    min-width: 300px; 
+
+    /* transition: border 0.4s ease-out; */
+}
+.claves:hover{
+    background-color: rgb(184, 141, 60); 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.claves-pressed{
+    background-color: rgb(184, 141, 60); 
+    border-color: rgb(101, 67, 33);
+}
+.pop-up-container{
+    opacity: 0;
+    background-color: #F9ECCC; 
+    position: fixed; 
+    pointer-events: none;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    transition: 0.5s ease-in-out;
+}
+.pop-up-contra{
+    background-color: white;
+    padding: 20px 25px; 
+    border-radius: 10px;
+
+    width: 500px;
+    min-height: 350px;
+    max-width: 85%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.buttons-abajo{
+    display: flex;
+    gap: 15px; 
+    justify-content: center; 
+    align-items: flex-end;
+}
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.fade-out{
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+/* Centers everything (vertical & horizontally) */
+.all-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.no-scroll{
+    overflow: hidden;
+}
+/* Puzzle  */
+#puzzle{
+    width: 360px; 
+    height: 360px; 
+    border: 1px solid; 
+
+    position: relative; 
+}
+.puzzle-item{
+    position: absolute; 
+    border: 1px solid;
+    width: 120px; 
+    height: 120px; 
+}
+.puzzle-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

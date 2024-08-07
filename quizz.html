@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> Quizz </title> 
+        <!-- responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS  -->
+        <link rel="stylesheet" href="css/index.css"> 
+    </head> 
+    <body>
+        <div id="quizz"> 
+            <h1> Responde las siguientes preguntas: </h1>
+
+            <p style="margin-bottom: 40px;"> 
+                Este es un pequeño quizz para probar tus habilidades de conocimiento general. Necesitarás aprobarlo con al menos 4 respuestas correctas para ver el siguiente reto. 
+                Caso contrario, tendrás que intentar infinitamente hasta hallar las respuestas correctas por tu cuenta. NO daré ayuda para este reto. Suerte amor :)  
+            </p>
+
+            <ol class="preguntas"> 
+                <!-- Se inserta elementos 'li' (las preguntas) + claves con JavaScript -->
+            </ol>
+
+            <br> <br> 
+            <button id="verificar-quizz"> Verificar </button>
+            <br> <br> 
+        </div> 
+
+        <div class="pop-up-container all-center" id="pop-up-el"> 
+            <div class="pop-up-contra"> 
+                <p> 
+                    <!-- No sé qué poner acá pero este es tu puntaje :)  -->
+                </p>
+                
+                <div class="pressStartFont">
+                    Puntaje:  
+                </div>
+
+                <div class="all-center"> 
+                    <img src="/img/cat-cat-jumping.gif" height="150" width="150">
+                </div>
+                
+                <br> <br> 
+                <div class="buttons-abajo"> 
+                    <button id="cerrar"> Volver a intentar </button>
+                    <!-- Se inserta botón de continuar solo en caso de pasar el mínimo --> 
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="js/questions.js"></script> 
+        <script src="js/index.js"></script> 
+    </body>
+</html>
