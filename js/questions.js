@@ -1,7 +1,7 @@
 let questions = [
     {
         question: "Si tuvieras que regalarle un juguete al Capi, qué sería lo que escogerías entre estas opciones? Lo más apropiado quizás. O lo más divertido.", 
-        answer: "Una columna de Casa", 
+        answer: "Una columna de casa", 
         options: [
             "Muñeca 3D", 
             "Un amasador", 
@@ -21,7 +21,7 @@ let questions = [
     }, 
     {
         question: "Lo que empezó en un ... termina en un ...", 
-        answer: "colegio - No termina.",
+        answer: "Colegio - No termina.",
         options: [
             "Hotel - Hotel", 
             "Amor tan bonito - felices por siempre", 
