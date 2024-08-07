@@ -191,13 +191,13 @@ if(window.location.pathname.endsWith("quizz.html")){
 // puzzle
 const puzzleContainer = document.getElementById("puzzle")
 let puzzle = []
-let size = 3
+let size = 4
 
 function getRow(i){
-    return Math.trunc((i-1)/3)
+    return Math.trunc((i-1)/size)
 }
 function getColumn(i){
-    return (i-1) % 3
+    return (i-1) % size
 }
 function generatePuzzle(){
     for(let i = 1; i <= size*size; i++){
@@ -205,8 +205,8 @@ function generatePuzzle(){
             value: i, 
             position: i, 
             image: "/img/cat-cat-jumping.gif", 
-            x: getColumn(i) * 120, 
-            y: getRow(i) * 120, 
+            x: getColumn(i) * 90, 
+            y: getRow(i) * 90, 
             disabled: false, 
         })
     }

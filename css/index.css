@@ -143,8 +143,8 @@ button:hover{
 .puzzle-item{
     position: absolute; 
     border: 1px solid;
-    width: 120px; 
-    height: 120px; 
+    width: 90px; 
+    height: 90px; 
 }
 .puzzle-item img{
     width: 100%;
